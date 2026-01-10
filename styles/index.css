@@ -1,7 +1,8 @@
  * {
-     margin: 0;
+     margin: 0 auto;
      padding: 0;
      box-sizing: border-box;
+     max-width: 1600px;
  }
 
  .open-sans {
@@ -23,18 +24,22 @@
  }
 
  .header-img {
-     width: 46.51px;
-     height: 56px;
      display: flex;
-     padding-left: 120px;
+     align-items: center;
+     gap: 10px;
 
  }
 
- .header-kv {
+ .header-img.footer-contant img {
+     width: 46.51px;
+     height: 56px;
+ }
+
+ .header-kv h1 {
      height: 36px;
      width: 71px;
      color: #469165;
-
+     margin: 0;
 
  }
 
@@ -56,7 +61,7 @@
 
  }
 
- .menu a {
+ .menu li {
      margin: 0 auto;
      align-items: center;
      justify-content: space-between;
@@ -70,6 +75,12 @@
      color: #FFFFFF;
      border-radius: 12px;
      cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+ .btn:hover {
+     background-color: #357a52;
+     transform: translateY(-2px);
  }
 
  #banner {
@@ -125,11 +136,18 @@
      color: #FFFFFF;
  }
 
- .btnn .primary.secondary {
+ .btnn .primary.secondary:hover {
      width: 465px;
      height: 52px;
      gap: 16px;
+     text-align: center;
  }
+     .btnn:hover {
+     background-color: #357a52;
+     transform: translateY(-2px);
+ }
+
+ 
 
  .primary {
      padding: 16px 12px;
@@ -138,8 +156,11 @@
  }
 
  .secondary {
-     gap: 12;
+    max-width: 198px;
+    height: 52px;
+     gap: 10;
      padding: 16px 12px;
+     background-color: wheat;
  }
 
  #apps {
@@ -274,8 +295,30 @@
  .footer {
      max-width: 1600px;
      height: 348px;
-     text-align: left;
-     padding: 120px 120px;
+     padding: 120px;
      background-color: #001931;
      color: #F7F6F2;
+ }
+ .footer-contant{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-logo{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+ .link{
+    max-width: 220px;
+    height: 64px;
+    text-align: right;
+ }
+ .copy{
+    max-width: 1360px;
+    height: 30px;
+    text-align:center;
+    gap:30px;
+    padding: 0px;
+    color: #F7F6F2;
  }
